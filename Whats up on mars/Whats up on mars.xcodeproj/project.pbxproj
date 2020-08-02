@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D00EC94248FBDE400055342 /* NavigationController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00EC93248FBDE400055342 /* NavigationController+Helpers.swift */; };
+		3D0447A52487E0BF00DC395A /* LatestPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0447A42487E0BF00DC395A /* LatestPhotoView.swift */; };
+		3D0447A72488075D00DC395A /* BrowsePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0447A62488075D00DC395A /* BrowsePhotosView.swift */; };
+		3D0447AC248807A100DC395A /* BrowseDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0447AB248807A100DC395A /* BrowseDateView.swift */; };
+		3D3AC7FF248A631700C762B7 /* BrowseCameraDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3AC7FE248A631700C762B7 /* BrowseCameraDateView.swift */; };
+		3D6ED23A248ADD39003D4439 /* LatestPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6ED239248ADD39003D4439 /* LatestPhotoViewModel.swift */; };
+		3D8AEAF62489584800E3727F /* PhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AEAF52489584800E3727F /* PhotoCollectionView.swift */; };
+		3D8AEAF82489586500E3727F /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AEAF72489586500E3727F /* PhotoItem.swift */; };
+		3D8AEAFC2489603F00E3727F /* BrowseCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AEAFB2489603F00E3727F /* BrowseCameraView.swift */; };
+		3D8AEAFE2489608400E3727F /* BrowseCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AEAFD2489608400E3727F /* BrowseCameraCell.swift */; };
+		3D914B532486B2940066B813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D914B522486B2940066B813 /* AppDelegate.swift */; };
+		3D914B552486B2940066B813 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D914B542486B2940066B813 /* SceneDelegate.swift */; };
+		3D914B572486B2940066B813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D914B562486B2940066B813 /* ContentView.swift */; };
+		3D914B592486B2950066B813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D914B582486B2950066B813 /* Assets.xcassets */; };
+		3D914B5C2486B2950066B813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D914B5B2486B2950066B813 /* Preview Assets.xcassets */; };
+		3D914B5F2486B2950066B813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D914B5D2486B2950066B813 /* LaunchScreen.storyboard */; };
+		3D914B672486B2CC0066B813 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D914B662486B2CC0066B813 /* ModelController.swift */; };
+		3D981CFA248EB726009E3962 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D981CF9248EB726009E3962 /* ImageDetailView.swift */; };
+		3D9AA464248BE35B00698A7D /* RoverInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9AA463248BE35B00698A7D /* RoverInfo.swift */; };
+		3DA663A52488102B001DEE8D /* BrowseRoversCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA663A42488102B001DEE8D /* BrowseRoversCell.swift */; };
+		3DD1F0F02493A8390035A8F3 /* MissionManifestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD1F0EF2493A8390035A8F3 /* MissionManifestResponse.swift */; };
+		3DD1F0F22493A8570035A8F3 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD1F0F12493A8570035A8F3 /* Manifest.swift */; };
+		3DD1F0F42493ABF00035A8F3 /* MissionManifestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD1F0F32493ABF00035A8F3 /* MissionManifestModel.swift */; };
+		3DD3A7DB248BFDC300768810 /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3A7DA248BFDC200768810 /* PhotosResponse.swift */; };
+		3DD749A7248E33F0005C649D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD749A6248E33F0005C649D /* ActivityIndicator.swift */; };
+		3DD749A9248E3EF3005C649D /* BrowseDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD749A8248E3EF3005C649D /* BrowseDateViewModel.swift */; };
+		3DD749AB248E45D2005C649D /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD749AA248E45D2005C649D /* Date+Helpers.swift */; };
+		3DD749AD248E4CCF005C649D /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD749AC248E4CCF005C649D /* PhotoView.swift */; };
+		3DD749AF248E54C6005C649D /* SelectedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD749AE248E54C6005C649D /* SelectedPhoto.swift */; };
+		3DD749B3248EA01B005C649D /* ImageZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD749B2248EA01B005C649D /* ImageZoomView.swift */; };
+		3DD749B6248EA513005C649D /* ImageZoomViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD749B5248EA513005C649D /* ImageZoomViewRepresentable.swift */; };
+		3DE531F22486B6C400D5BA5F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE531F12486B6C400D5BA5F /* Camera.swift */; };
+		3DE531F42486B6EF00D5BA5F /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE531F32486B6EF00D5BA5F /* Rover.swift */; };
+		3DE531F62486B71000D5BA5F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE531F52486B71000D5BA5F /* Photo.swift */; };
+		3DE531FE2486C69300D5BA5F /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE531FD2486C69300D5BA5F /* URL+Helpers.swift */; };
+		3DEB36572486CE270002B6FE /* LatestPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEB36562486CE270002B6FE /* LatestPhotos.swift */; };
+		3DFD6BA12487B57100548869 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD6BA02487B57100548869 /* APIClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D00EC93248FBDE400055342 /* NavigationController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+Helpers.swift"; sourceTree = "<group>"; };
+		3D0447A42487E0BF00DC395A /* LatestPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPhotoView.swift; sourceTree = "<group>"; };
+		3D0447A62488075D00DC395A /* BrowsePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePhotosView.swift; sourceTree = "<group>"; };
+		3D0447AB248807A100DC395A /* BrowseDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseDateView.swift; sourceTree = "<group>"; };
+		3D3AC7FE248A631700C762B7 /* BrowseCameraDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCameraDateView.swift; sourceTree = "<group>"; };
+		3D6ED239248ADD39003D4439 /* LatestPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPhotoViewModel.swift; sourceTree = "<group>"; };
+		3D8AEAF52489584800E3727F /* PhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionView.swift; sourceTree = "<group>"; };
+		3D8AEAF72489586500E3727F /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		3D8AEAFB2489603F00E3727F /* BrowseCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCameraView.swift; sourceTree = "<group>"; };
+		3D8AEAFD2489608400E3727F /* BrowseCameraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCameraCell.swift; sourceTree = "<group>"; };
+		3D914B4F2486B2940066B813 /* What‘s Up On Mars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What‘s Up On Mars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D914B522486B2940066B813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D914B542486B2940066B813 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D914B562486B2940066B813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D914B582486B2950066B813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D914B5B2486B2950066B813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D914B5E2486B2950066B813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D914B602486B2950066B813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D914B662486B2CC0066B813 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		3D981CF9248EB726009E3962 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		3D9AA463248BE35B00698A7D /* RoverInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverInfo.swift; sourceTree = "<group>"; };
+		3DA663A42488102B001DEE8D /* BrowseRoversCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseRoversCell.swift; sourceTree = "<group>"; };
+		3DD1F0EF2493A8390035A8F3 /* MissionManifestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionManifestResponse.swift; sourceTree = "<group>"; };
+		3DD1F0F12493A8570035A8F3 /* Manifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manifest.swift; sourceTree = "<group>"; };
+		3DD1F0F32493ABF00035A8F3 /* MissionManifestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionManifestModel.swift; sourceTree = "<group>"; };
+		3DD3A7DA248BFDC200768810 /* PhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
+		3DD749A6248E33F0005C649D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		3DD749A8248E3EF3005C649D /* BrowseDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseDateViewModel.swift; sourceTree = "<group>"; };
+		3DD749AA248E45D2005C649D /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		3DD749AC248E4CCF005C649D /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		3DD749AE248E54C6005C649D /* SelectedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhoto.swift; sourceTree = "<group>"; };
+		3DD749B2248EA01B005C649D /* ImageZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomView.swift; sourceTree = "<group>"; };
+		3DD749B5248EA513005C649D /* ImageZoomViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewRepresentable.swift; sourceTree = "<group>"; };
+		3DE531F12486B6C400D5BA5F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		3DE531F32486B6EF00D5BA5F /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
+		3DE531F52486B71000D5BA5F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3DE531FD2486C69300D5BA5F /* URL+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Helpers.swift"; sourceTree = "<group>"; };
+		3DEB36562486CE270002B6FE /* LatestPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPhotos.swift; sourceTree = "<group>"; };
+		3DFD6BA02487B57100548869 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D914B4C2486B2940066B813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D0447A82488076E00DC395A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DD749A6248E33F0005C649D /* ActivityIndicator.swift */,
+				3D0447A42487E0BF00DC395A /* LatestPhotoView.swift */,
+				3D0447A62488075D00DC395A /* BrowsePhotosView.swift */,
+				3D0447AB248807A100DC395A /* BrowseDateView.swift */,
+				3D8AEAFB2489603F00E3727F /* BrowseCameraView.swift */,
+				3D3AC7FE248A631700C762B7 /* BrowseCameraDateView.swift */,
+				3D8AEAF924895FC300E3727F /* Cells */,
+				3D8AEAFA24895FEA00E3727F /* PhotoCollection */,
+				3DD749AC248E4CCF005C649D /* PhotoView.swift */,
+				3DD749B4248EA022005C649D /* ImageDetail */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8AEAF924895FC300E3727F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3DA663A42488102B001DEE8D /* BrowseRoversCell.swift */,
+				3D8AEAFD2489608400E3727F /* BrowseCameraCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3D8AEAFA24895FEA00E3727F /* PhotoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				3D8AEAF52489584800E3727F /* PhotoCollectionView.swift */,
+				3D8AEAF72489586500E3727F /* PhotoItem.swift */,
+			);
+			path = PhotoCollection;
+			sourceTree = "<group>";
+		};
+		3D914B462486B2940066B813 = {
+			isa = PBXGroup;
+			children = (
+				3D914B512486B2940066B813 /* Whats up on mars */,
+				3D914B502486B2940066B813 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D914B502486B2940066B813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D914B4F2486B2940066B813 /* What‘s Up On Mars.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D914B512486B2940066B813 /* Whats up on mars */ = {
+			isa = PBXGroup;
+			children = (
+				3D914B522486B2940066B813 /* AppDelegate.swift */,
+				3D914B542486B2940066B813 /* SceneDelegate.swift */,
+				3D914B562486B2940066B813 /* ContentView.swift */,
+				3DD749AE248E54C6005C649D /* SelectedPhoto.swift */,
+				3D0447A82488076E00DC395A /* Views */,
+				3DFD6BA22487B73700548869 /* Networking */,
+				3DE531FF2486C69E00D5BA5F /* Helpers */,
+				3D914B6A2486B39F0066B813 /* Model */,
+				3D914B582486B2950066B813 /* Assets.xcassets */,
+				3D914B5D2486B2950066B813 /* LaunchScreen.storyboard */,
+				3D914B602486B2950066B813 /* Info.plist */,
+				3D914B5A2486B2950066B813 /* Preview Content */,
+			);
+			path = "Whats up on mars";
+			sourceTree = "<group>";
+		};
+		3D914B5A2486B2950066B813 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D914B5B2486B2950066B813 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D914B6A2486B39F0066B813 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DD1F0EF2493A8390035A8F3 /* MissionManifestResponse.swift */,
+				3DD1F0F12493A8570035A8F3 /* Manifest.swift */,
+				3D9AA463248BE35B00698A7D /* RoverInfo.swift */,
+				3DEB36562486CE270002B6FE /* LatestPhotos.swift */,
+				3DD3A7DA248BFDC200768810 /* PhotosResponse.swift */,
+				3DE531F52486B71000D5BA5F /* Photo.swift */,
+				3DE531F32486B6EF00D5BA5F /* Rover.swift */,
+				3DE531F12486B6C400D5BA5F /* Camera.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DD749B4248EA022005C649D /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3D981CF9248EB726009E3962 /* ImageDetailView.swift */,
+				3DD749B2248EA01B005C649D /* ImageZoomView.swift */,
+				3DD749B5248EA513005C649D /* ImageZoomViewRepresentable.swift */,
+			);
+			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		3DE531FF2486C69E00D5BA5F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D00EC93248FBDE400055342 /* NavigationController+Helpers.swift */,
+				3DE531FD2486C69300D5BA5F /* URL+Helpers.swift */,
+				3DD749AA248E45D2005C649D /* Date+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DFD6BA22487B73700548869 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3DD1F0F32493ABF00035A8F3 /* MissionManifestModel.swift */,
+				3DD749A8248E3EF3005C649D /* BrowseDateViewModel.swift */,
+				3D6ED239248ADD39003D4439 /* LatestPhotoViewModel.swift */,
+				3D914B662486B2CC0066B813 /* ModelController.swift */,
+				3DFD6BA02487B57100548869 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D914B4E2486B2940066B813 /* Whats up on mars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D914B632486B2950066B813 /* Build configuration list for PBXNativeTarget "Whats up on mars" */;
+			buildPhases = (
+				3D914B4B2486B2940066B813 /* Sources */,
+				3D914B4C2486B2940066B813 /* Frameworks */,
+				3D914B4D2486B2940066B813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whats up on mars";
+			productName = "Whats up on mars";
+			productReference = 3D914B4F2486B2940066B813 /* What‘s Up On Mars.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D914B472486B2940066B813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Jan Gilles";
+				TargetAttributes = {
+					3D914B4E2486B2940066B813 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 3D914B4A2486B2940066B813 /* Build configuration list for PBXProject "Whats up on mars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D914B462486B2940066B813;
+			productRefGroup = 3D914B502486B2940066B813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D914B4E2486B2940066B813 /* Whats up on mars */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D914B4D2486B2940066B813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D914B5F2486B2950066B813 /* LaunchScreen.storyboard in Resources */,
+				3D914B5C2486B2950066B813 /* Preview Assets.xcassets in Resources */,
+				3D914B592486B2950066B813 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D914B4B2486B2940066B813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD1F0F02493A8390035A8F3 /* MissionManifestResponse.swift in Sources */,
+				3DD749AF248E54C6005C649D /* SelectedPhoto.swift in Sources */,
+				3DEB36572486CE270002B6FE /* LatestPhotos.swift in Sources */,
+				3DD749AD248E4CCF005C649D /* PhotoView.swift in Sources */,
+				3DE531F62486B71000D5BA5F /* Photo.swift in Sources */,
+				3D914B532486B2940066B813 /* AppDelegate.swift in Sources */,
+				3DD749B3248EA01B005C649D /* ImageZoomView.swift in Sources */,
+				3DFD6BA12487B57100548869 /* APIClient.swift in Sources */,
+				3DD1F0F22493A8570035A8F3 /* Manifest.swift in Sources */,
+				3DD749A7248E33F0005C649D /* ActivityIndicator.swift in Sources */,
+				3DD749A9248E3EF3005C649D /* BrowseDateViewModel.swift in Sources */,
+				3D9AA464248BE35B00698A7D /* RoverInfo.swift in Sources */,
+				3D6ED23A248ADD39003D4439 /* LatestPhotoViewModel.swift in Sources */,
+				3D914B672486B2CC0066B813 /* ModelController.swift in Sources */,
+				3D8AEAFE2489608400E3727F /* BrowseCameraCell.swift in Sources */,
+				3D8AEAF62489584800E3727F /* PhotoCollectionView.swift in Sources */,
+				3D0447A52487E0BF00DC395A /* LatestPhotoView.swift in Sources */,
+				3DD1F0F42493ABF00035A8F3 /* MissionManifestModel.swift in Sources */,
+				3D3AC7FF248A631700C762B7 /* BrowseCameraDateView.swift in Sources */,
+				3D914B552486B2940066B813 /* SceneDelegate.swift in Sources */,
+				3D0447A72488075D00DC395A /* BrowsePhotosView.swift in Sources */,
+				3D914B572486B2940066B813 /* ContentView.swift in Sources */,
+				3DE531FE2486C69300D5BA5F /* URL+Helpers.swift in Sources */,
+				3D00EC94248FBDE400055342 /* NavigationController+Helpers.swift in Sources */,
+				3DD3A7DB248BFDC300768810 /* PhotosResponse.swift in Sources */,
+				3DE531F22486B6C400D5BA5F /* Camera.swift in Sources */,
+				3D8AEAFC2489603F00E3727F /* BrowseCameraView.swift in Sources */,
+				3D0447AC248807A100DC395A /* BrowseDateView.swift in Sources */,
+				3DE531F42486B6EF00D5BA5F /* Rover.swift in Sources */,
+				3DD749B6248EA513005C649D /* ImageZoomViewRepresentable.swift in Sources */,
+				3DA663A52488102B001DEE8D /* BrowseRoversCell.swift in Sources */,
+				3D8AEAF82489586500E3727F /* PhotoItem.swift in Sources */,
+				3DD749AB248E45D2005C649D /* Date+Helpers.swift in Sources */,
+				3D981CFA248EB726009E3962 /* ImageDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D914B5D2486B2950066B813 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D914B5E2486B2950066B813 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D914B612486B2950066B813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D914B622486B2950066B813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D914B642486B2950066B813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Whats up on mars/Preview Content\"";
+				DEVELOPMENT_TEAM = 4EV4FQTKFD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Whats up on mars/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jan-gilles.whats-up-on-mars.Whats-up-on-mars";
+				PRODUCT_NAME = "What‘s Up On Mars";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D914B652486B2950066B813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Whats up on mars/Preview Content\"";
+				DEVELOPMENT_TEAM = 4EV4FQTKFD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Whats up on mars/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jan-gilles.whats-up-on-mars.Whats-up-on-mars";
+				PRODUCT_NAME = "What‘s Up On Mars";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D914B4A2486B2940066B813 /* Build configuration list for PBXProject "Whats up on mars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D914B612486B2950066B813 /* Debug */,
+				3D914B622486B2950066B813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D914B632486B2950066B813 /* Build configuration list for PBXNativeTarget "Whats up on mars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D914B642486B2950066B813 /* Debug */,
+				3D914B652486B2950066B813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D914B472486B2940066B813 /* Project object */;
+}
